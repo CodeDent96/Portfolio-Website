@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .hero-image {
+            background: url(education.jpg) no-repeat center;
+            background-size: cover;
+            height: 900px;
+            position: relative;
+            opacity: 1.0;
+        }
+
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+        /* Left and right column */
+        .column.side {
+            width: 25%;
+        }
+
+        /* Middle column */
+        .column.middle {
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .column.side,
+            .column.middle {
+                width: 100%;
+            }
+        }
+    </style>
+    <title>Education</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievements.html">Achievements and Awards</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+    <div class="hero-image">
+        <div class="row">
+            <div class="column side">
+                <h2 style="color: chocolate;">Schooling</h2>
+                <p style="color: white;">I passed 10th Standard from <a href="https://www.modernschooldpr.com/"><span
+                            style="color: lightsalmon;">Modern School Dungarpur</span></a> in 2011 with 9.8 CGPA</p>
+                <p style="color: white;">After that, I moved to Gandhinagar, where I completed 12th with 86% aggregate
+                    from <a href="http://hillwoodsindia.org"><span style="color: lightsalmon;">Hillwoods School,
+                            Gandhinagar</span></a>with Physics, Chemistry & Biology as main subjects.</p>
+            </div>
+
+            <div class="column middle">
+                <h2 style="color: crimson;">Graduation</h2>
+                <p style="color: lavenderblush;">After clearing NEET in 2013, I got into <a
+                        href="https://eklavya.ac.in/"><span style="color: lightsalmon;">Eklavya Dental College &
+                            Hospital </span></a> registered under Rajasthan University of Health Sciences.</p><br>
+                <p style="color: lavenderblush;">With 70% aggregate, I passed the university exams with flying colors
+                    and was amongst toppers in 2017.</p>
+            </div>
+
+            <div class="column side">
+                <h2 style="color: lightblue;">Experience</h2>
+                <ul style="color: cyan;">
+                    <li>Intern at Eklavya Dental College and Hospital 2017-2018</li>
+                    <li>Associate Dentist under Dr. Julfiqar Khan 2019-2020</li>
+                    <li>Associate Dentist under Dr. Divakar Gupta 2020-2021</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
